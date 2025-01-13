@@ -1,6 +1,6 @@
 import BlogPosts from "@/components/Blogpost/Blogpost"
 import MainBreadcum from "@/components/Breadcum/MainBreadcum"
-import SocialIcon from "@/components/SocialIcon/SocilIcon"
+import SocialIcon from "@/components/SocialIcon/SocialIcon"
 
 
 

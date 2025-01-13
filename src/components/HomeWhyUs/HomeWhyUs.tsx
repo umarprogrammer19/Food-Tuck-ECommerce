@@ -109,7 +109,7 @@ export const HomeWhyUs = () => {
             <li className="text-center">
               <div className="bg-orange-400 p-5 mb-2 w-20 h-20 rounded-lg shadow-md flex items-center justify-center">
                 <Image
-                  src="/assets/wine.png"
+                  src="/assets/Wine.png"
                   alt="Wine"
                   width={50}
                   height={50}
@@ -122,7 +122,7 @@ export const HomeWhyUs = () => {
             <li className="text-center">
               <div className="bg-orange-400 p-5 mb-2 w-20 h-20 rounded-lg shadow-md flex items-center justify-center">
                 <Image
-                  src="/assets/cookie.png"
+                  src="/assets/Cookie.png"
                   alt="Cookie"
                   width={50}
                   height={50}

@@ -1,6 +1,7 @@
 
 import MainBreadcum from '@/components/Breadcum/MainBreadcum'
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 const Checkout = () => {
@@ -95,10 +96,12 @@ const Checkout = () => {
                                     key={index}
                                     className="flex items-center justify-between border-b pb-4"
                                 >
-                                    <img
-                                        src="/assets/checkoutimg.svg"
+                                     <Image
+                                        src="/assets/shop1.svg"
                                         alt="Chicken Tikka Kabab"
                                         className="w-16 h-16 rounded-lg"
+                                        width={200}
+                                        height={100}
                                     />
                                     <div className="flex-1 px-4">
                                         <h3 className="text-lg font-semibold">
