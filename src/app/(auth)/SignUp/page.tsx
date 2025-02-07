@@ -27,6 +27,7 @@ const SignUp = () => {
       console.log("Signup response:", response);
       router.push("/LogIn");
     } catch (error) {
+      console.log(error);
       setError("Signup failed. Please try again.");
     } finally {
       setLoading(false);

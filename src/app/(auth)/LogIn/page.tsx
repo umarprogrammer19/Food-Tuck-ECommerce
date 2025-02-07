@@ -29,6 +29,7 @@ const LogIn = () => {
         window.location.href = "/";
       }, 2000);
     } catch (error) {
+      console.log(error);
       setError("Login failed. Please check your credentials.");
     } finally {
       setLoading(false);
@@ -87,7 +88,7 @@ const LogIn = () => {
 
           {/* Link to Sign Up */}
           <p className="text-center mt-5">
-            Don't have an account?{" "}
+            Don&apos;t have an account?{" "}
             <Link className="hover:text-gray-500" href="/SignUp">
               Sign up
             </Link>
