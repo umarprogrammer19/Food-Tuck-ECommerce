@@ -1,4 +1,4 @@
-import { BASE_URL } from "./baseUrl"
+import { BASE_URL } from "./base-url";
 
 export async function loginUser(email: string, password: string) {
     try {
