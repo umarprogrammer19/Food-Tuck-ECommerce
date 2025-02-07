@@ -13,6 +13,7 @@ import {
 import { BASE_URL } from "@/lib/api/base-url";
 import { loadStripe } from "@stripe/stripe-js";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || "");
@@ -29,6 +30,7 @@ const Cart: React.FC = () => {
     const [cartItems, setCartItems] = useState<CartItem[]>([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
+    const router = useRouter();
 
     useEffect(() => {
         try {
@@ -41,6 +43,11 @@ const Cart: React.FC = () => {
         } catch (error) {
             console.error("Error parsing localStorage data:", error);
         }
+    }, []);
+
+    useEffect(() => {
+        const token = localStorage.getItem("accessToken");
+        if (!token) router.push("/LogIn")
     }, []);
 
     const updateLocalStorage = (updatedCart: CartItem[]) => {
@@ -88,6 +95,7 @@ const Cart: React.FC = () => {
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${accessToken}`,
                 },
+                credentials: "include",
                 body: JSON.stringify({ products: cartItems, totalPrice }),
             });
 
