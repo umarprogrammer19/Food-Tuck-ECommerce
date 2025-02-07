@@ -9,19 +9,22 @@ import { MidBanner } from "@/components/MidBanner/MidBanner";
 import { OurChef } from "@/components/OurChef/OurChef";
 import { ClientTestimonials } from "@/components/Testimonials/ClientTestimonials";
 
+
+
+
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <HomeAbout />
-      <FoodCategories />
-      <HomeWhyUs />
-      <MidBanner />
-      <Details />
-      <OurChef />
-      <ClientTestimonials />
-      <ActiveBanner />
-      <HomeBlog />
+    <HeroSection/>
+    <HomeAbout/>
+    <FoodCategories/>
+    <HomeWhyUs/>
+    <MidBanner/>
+    <Details/>
+    <OurChef/>
+    <ClientTestimonials/>
+    <ActiveBanner/>
+    <HomeBlog/>
     </>
   );
 }
