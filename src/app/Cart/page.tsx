@@ -25,7 +25,6 @@ interface CartItem {
 const Cart: React.FC = () => {
     const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
-    // Fetch cart items from localStorage on component mount
     useEffect(() => {
         try {
             const storedCart = JSON.parse(localStorage.getItem('cart') || '[]') as CartItem[];
