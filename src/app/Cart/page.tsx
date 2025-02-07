@@ -162,6 +162,22 @@ const Cart: React.FC = () => {
                         <div className="p-6 rounded-lg py-20">
                             <div className="grid grid-cols-2 gap-10 max-md:grid-cols-1">
                                 <div>
+                                    <h3 className="font-semibold text-lg mb-2">Coupon Code</h3>
+                                    <p className="text-sm text-gray-500 mb-4">
+                                        Enter a valid coupon code to get discounts.
+                                    </p>
+                                    <div className="flex items-center space-x-2">
+                                        <input
+                                            type="text"
+                                            placeholder="Enter code"
+                                            className="flex-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-orange-300"
+                                        />
+                                        <button className="px-4 py-2 bg-orange-400 text-white rounded hover:bg-orange-500">
+                                            Apply
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
                                     <h3 className="font-semibold text-lg mb-2">Total Bill</h3>
                                     <div className="p-4 rounded-md space-y-2 border border-gray-300">
                                         <div className="flex justify-between text-lg font-semibold">
