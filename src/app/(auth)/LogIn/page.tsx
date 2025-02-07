@@ -23,7 +23,7 @@ const LogIn = () => {
       setSuccess("Login successful! Redirecting...");
       console.log("Login response:", response);
 
-      localStorage.setItem("user", JSON.stringify(response));
+      localStorage.setItem("accessToken", JSON.stringify(response.accessToken));
 
       setTimeout(() => {
         window.location.href = "/";
